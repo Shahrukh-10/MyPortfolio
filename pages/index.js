@@ -94,10 +94,10 @@ export default function Home({ scroll }) {
           <h1 className="projectTitle">Here are some of my projects</h1>
 
           <div className="project">
-            <div className="phoneScreen phoneScreen1">
+            <div className="phoneScreen phoneScreen1 phone">
               <Image width={300} height={600} src="/phone.png" alt="" />
               <div className="innerPhone">
-                {/* <img src="" alt="innerphone" /> */}
+              <Image width={195} height={3052} className="phoneApp" src="/phoneinner.png" alt="innerphone" />
               </div>
             </div>
             <div className="projectDescreption">
@@ -121,10 +121,10 @@ export default function Home({ scroll }) {
           </div>
 
           <div className="project">
-            <div className="phoneScreen laptopScreen">
+            <div className="phoneScreen laptopScreen laptopfit">
               <Image width={600} height={379} src="/laptop.png" alt="" />
-              <div className="innerPhone">
-                {/* <img src="" alt="innerphone" /> */}
+              <div className="innerLaptop">
+                <Image width={451} height={282} className="laptopApp" src="/laptopinner.png" alt="innerphone" />
               </div>
             </div>
             <div className="projectDescreption">
@@ -148,10 +148,10 @@ export default function Home({ scroll }) {
           </div>
 
           <div className="project">
-            <div className="phoneScreen phoneScreen2">
+            <div className="phoneScreen phoneScreen2 phone">
               <Image width={300} height={600} src="/phone.png" alt="" />
               <div className="innerPhone">
-                {/* <img src="" alt="innerphone" /> */}
+              <Image width={195} height={1294} className="phoneApp" src="/phoneinner1.png" alt="innerphone" />
               </div>
             </div>
             <div className="projectDescreption">

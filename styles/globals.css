@@ -196,22 +196,75 @@
     overflow: hidden;
 }
 
-.findme h5{
+.findme h5 {
     font-size: 4vw;
     margin-bottom: 80px;
     transition: 1.5s all ease-in-out;
 }
-.findme h5:hover{
+
+.findme h5:hover {
     transform: rotateX(720deg);
 }
-.socialIcons{
+
+.socialIcons {
     display: flex;
     width: 15%;
     justify-content: space-between;
 }
-.icon{
+
+.icon {
     transition: 1.5s all ease-in-out;
 }
-.icon:hover{
+
+.icon:hover {
     transform: rotate(360deg) rotateX(360deg) scale(1.5);
+}
+
+.laptopfit {
+    position: relative;
+}
+
+.innerLaptop {
+    position: absolute;
+    top: 88px;
+    left: 68px;
+    width: 451px;
+    height: 287px;
+    overflow: scroll;
+    /* overflow-x: scroll;
+                overflow-y: scroll; */
+}
+
+.laptopApp {
+    /* object-fit: contain; */
+    width: 100%;
+    height: auto;
+    /* overflow-y: scroll; */
+}
+
+.innerLaptop::-webkit-scrollbar {
+    display: none;
+}
+
+
+.phone {
+    position: relative;
+}
+
+.innerPhone {
+    width: 270px;
+    height: 573px;
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    border-radius: 29px;
+    overflow: scroll;
+}
+
+.phoneApp {
+    width: 100%;
+}
+
+.innerPhone::-webkit-scrollbar {
+    display: none;
 }
