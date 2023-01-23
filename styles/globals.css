@@ -1,0 +1,217 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: #111;
+    height: 100vh;
+}
+
+.page1 {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.saluteText {
+    flex: 3;
+}
+
+.saluteText h1 {
+    color: #333;
+    font-size: 60vw;
+}
+
+.saluteImage {
+    flex: 1;
+    padding-top: 3.5rem;
+}
+
+.page2 {
+    height: 100vh;
+    background: rebeccapurple;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+}
+
+.name {
+    font-size: 12vw;
+    color: #333;
+    font-weight: bolder;
+    line-height: 100vh;
+}
+
+
+.page3 {
+    height: 100vh;
+    background: #111 url("../public/bg1.png");
+    overflow: hidden;
+}
+
+.webdev {
+    color: #333;
+    font-size: 10vw;
+    font-weight: bolder;
+    line-height: 100vh;
+}
+
+
+.page4 {
+    height: 100vh;
+    background: rebeccapurple url(../public/bg2.png);
+    overflow: hidden;
+}
+
+.gamedev {
+    color: #333;
+    font-size: 9.5vw;
+    font-weight: bolder;
+    line-height: 100vh;
+}
+
+
+.projects {
+    display: flex;
+    background-color: #111;
+    flex-direction: column;
+    gap: 30vh;
+    padding: 0px 100px;
+    overflow: hidden;
+}
+
+.page5 {
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectTitle {
+
+    color: #333;
+    background-color: #111;
+    height: 100vh;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 9.5vw;
+    color: #333;
+    padding: 30px 100px;
+
+    width: 90%;
+}
+
+.phoneScreen {
+    flex: 2;
+}
+
+.project {
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    gap: 100px;
+    padding: 0px 100px;
+}
+
+.projectDescreption {
+    flex: 2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    gap: 50px;
+    flex: 3;
+}
+
+.projectHeading {
+
+    text-align: center;
+    font-size: 7vw;
+    color: #333;
+
+}
+
+.projectDescreptionInner {
+    font-size: 20px;
+    color: #555;
+    text-align: justify;
+    line-height: 40px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #555;
+    color: #555;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: "View Demo";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 1s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #555;
+    color: #222;
+}
+
+.btn:hover.btn::after {
+    transform: translateX(100%);
+}
+
+.project:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.laptopScreen {
+    padding-top: 70px;
+}
+
+
+.page6 {
+    background-color: #111;
+    height: 100vh;
+    display: flex;
+    color: #333;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.findme h5{
+    font-size: 4vw;
+    margin-bottom: 80px;
+    transition: 1.5s all ease-in-out;
+}
+.findme h5:hover{
+    transform: rotateX(720deg);
+}
+.socialIcons{
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+}
+.icon{
+    transition: 1.5s all ease-in-out;
+}
+.icon:hover{
+    transform: rotate(360deg) rotateX(360deg) scale(1.5);
+}
