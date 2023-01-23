@@ -3,9 +3,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Link from "next/link";
 
-
 export default function Home({ scroll }) {
-
   return (
     <>
       <style jsx>
@@ -43,13 +41,13 @@ export default function Home({ scroll }) {
           .phoneScreen2 {
             transform: translateX(calc(770vh - ${scroll}px));
           }
-          .findme{
+          .findme {
             transform: translateY(calc(890vh - ${scroll}px));
           }
-          .github{
+          .github {
             transform: translateX(calc(${scroll}px - 895vh));
           }
-          .linkedin{
+          .linkedin {
             transform: translateX(calc(-${scroll}px + 895vh));
           }
         `}
@@ -65,7 +63,13 @@ export default function Home({ scroll }) {
             <h1 className="saluteHead">Hi</h1>
           </div>
           <div className="saluteImage flex-1 flex-grow  object-bottom mb-0">
-            <Image width={406} height={900} className="saluteImg" src="/person.png" alt="" />
+            <Image
+              width={406}
+              height={900}
+              className="saluteImg"
+              src="/person.png"
+              alt=""
+            />
           </div>
         </div>
         <div className="page2">
@@ -118,7 +122,7 @@ export default function Home({ scroll }) {
 
           <div className="project">
             <div className="phoneScreen laptopScreen">
-            <Image width={600} height={379} src="/laptop.png" alt="" />
+              <Image width={600} height={379} src="/laptop.png" alt="" />
               <div className="innerPhone">
                 {/* <img src="" alt="innerphone" /> */}
               </div>
@@ -145,7 +149,7 @@ export default function Home({ scroll }) {
 
           <div className="project">
             <div className="phoneScreen phoneScreen2">
-            <Image width={300} height={600} src="/phone.png" alt="" />
+              <Image width={300} height={600} src="/phone.png" alt="" />
               <div className="innerPhone">
                 {/* <img src="" alt="innerphone" /> */}
               </div>
@@ -172,20 +176,33 @@ export default function Home({ scroll }) {
         </div>
 
         <div className="page6">
-          <div className="findme"><h5>Connect with me 🙂
-</h5> </div>
+          <div className="findme">
+            <h5>Connect with me 🙂</h5>{" "}
+          </div>
           <div className="socialIcons">
             <div className="github">
+              <Link target="_blank" href="https://github.com/Shahrukh-10">
+                <Image
+                  className="icon"
+                  width={80}
+                  height={80}
+                  src="/github.png"
+                  alt=""
+                />
+              </Link>
+            </div>
+            <div className="linkedin">
               <Link
                 target="_blank"
                 href="https://www.linkedin.com/in/shahrukh-khan-0344391a2"
               >
-                <Image className="icon" width={80} height={80} src="/github.png" alt="" />
-              </Link>
-            </div>
-            <div className="linkedin">
-              <Link target="_blank" href="https://github.com/Shahrukh-10">
-                <Image className="icon" width={80} height={80} src="/linkedin.png" alt="" />
+                <Image
+                  className="icon"
+                  width={80}
+                  height={80}
+                  src="/linkedin.png"
+                  alt=""
+                />
               </Link>
             </div>
           </div>
