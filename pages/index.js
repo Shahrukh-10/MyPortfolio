@@ -194,7 +194,7 @@ export default function Home({ scroll }) {
             <div className="linkedin">
               <Link
                 target="_blank"
-                href="https://www.linkedin.com/in/shahrukh-khan-0344391a2"
+                href="www.linkedin.com/in/shahrukhkhan76"
               >
                 <Image
                   className="icon"
